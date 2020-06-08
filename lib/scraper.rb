@@ -36,6 +36,9 @@ end
 students
 end
 
+#Ex: {:name => "Abby Smith", :location => "Brooklyn, NY", :profile_url => "students/abby-smith.html"},
+
+
 #responsible for scraping an individual student's profile page to further get info about that student:
 #Class method that should use Nokogiri and URI
 #Returns a hash that describes individual students: Twitter URL, Linkedin URL, Github URL, blob URL, profile quote, bio
