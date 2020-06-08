@@ -11,9 +11,9 @@ class Scraper
   #Return an array of Hashes, each hash represents a single student
   #Use Element Inspector
 def self.scrape_index_page(index_url)
+students = []
   #Nokogiri::HTML method to take the string of HTML returned by open-URI's open method and convert into nested nodes:
 page = Nokogiri::HTML(open(index_url))
-students = []
 page.css("div.student-card").each do |student|
 
 name = student.css(".student-name").text
