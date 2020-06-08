@@ -54,7 +54,7 @@ student_profiles = {}
 #Looks like: <div class="social-icon-container">...</div>
 social_link = doc.css(".vitals-container .social-icon-container a")
 
-#Iterate over each element in the social link: 
+#Iterate over each element in the social link:
 social_link.each do |element|
       if element.attr("href").include?("twitter")
         student_profiles[:twitter] = element.attr('href')
