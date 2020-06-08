@@ -1,4 +1,6 @@
 #Will use the information returned by the above scraper methods
+#SEND. Send is an instance method of the Object class. 
+
 class Student
 
 attr_accessor :name, :location, :twitter, :linkedin, :github, :blog, :profile_quote, :bio, :profile_url
