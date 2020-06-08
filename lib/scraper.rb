@@ -25,7 +25,7 @@ name = student.css(".student-name").text
 location = student.css(".student-location").text
 #Code for grabbing each profile URL:
 profile_url = student.css("a").attribute("href").value
-#Outlines the hash that we want. Student info = name, location, and url. 
+#Outlines the hash that we want. Student info = name, location, and url. Example below.
 student_info = {:name => name,
                 :location => location,
                 :profile_url => profile_url}
