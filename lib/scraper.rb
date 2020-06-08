@@ -48,7 +48,6 @@ html = open(profile_url)
 doc = Nokogiri::HTML(html)
 
 ##Returns a hash that describes individual students: Twitter URL, Linkedin URL, Github URL, blob URL, profile quote, bio
-
 student_profiles = {}
 
     social_link = doc.css(".vitals-container .social-icon-container a")
