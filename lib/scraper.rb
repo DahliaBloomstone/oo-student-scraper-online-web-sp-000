@@ -2,7 +2,7 @@
 require 'open-uri'
 require 'nokogiri'
 require 'pry'
-
+#attr_accessor :name, :location, :twitter, :linkedin, :github, :blog, :profile_quote, :bio, :profile_url
 #Responsible for scraping the index page that lists all of the students:
 #URL: https://learn-co-curriculum.github.io/student-scraper-test-page/index.html
 #Use Nokogiri and URI
