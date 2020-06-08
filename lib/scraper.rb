@@ -8,11 +8,10 @@ class Scraper
   #responsible for scraping the index page that lists all of the students:
   #URL: https://learn-co-curriculum.github.io/student-scraper-test-page/index.html
   #Use Nokogiri and URI
-  #Return an array of Hashes, each hash represents a single student
   #Use Element Inspector
 def self.scrape_index_page(index_url)
-students = []
-  #Nokogiri::HTML method to take the string of HTML returned by open-URI's open method and convert into nested nodes:
+students = []   #Return an array of Hashes, each hash represents a single student
+#Nokogiri::HTML method to take the string of HTML returned by open-URI's open method and convert into nested nodes:
 page = Nokogiri::HTML(open(index_url))
 page.css("div.student-card").each do |student|
 
