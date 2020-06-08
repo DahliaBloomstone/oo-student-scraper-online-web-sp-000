@@ -70,3 +70,13 @@ doc = Nokogiri::HTML(html)
     student_profiles
   end
 end
+
+
+#Example returned info: {
+#  :twitter=>"http://twitter.com/flatironschool",
+#  :linkedin=>"https://www.linkedin.com/in/flatironschool",
+#  :github=>"https://github.com/learn-co",
+#  :blog=>"http://flatironschool.com",
+#  :profile_quote=>"\"Forget safety. Live where you fear to live. Destroy your reputation. Be notorious.\" - Rumi",
+#  :bio=> "I'm a school"
+#                      }
