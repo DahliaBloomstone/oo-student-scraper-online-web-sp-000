@@ -10,10 +10,10 @@ attr_accessor :name, :location, :twitter, :linkedin, :github, :blog, :profile_qu
 #Add newly created student to Student Class @@all array of students
 #push self into array
 def initialize(student_hash)
-  self.send("name=", student_hash[:name])
-  self.send("location=", student_hash[:location])
-  self.send("profile_url=", student_hash[:profile_url])
-  @@all << self
+self.send("name=", student_hash[:name])
+self.send("location=", student_hash[:location])
+self.send("profile_url=", student_hash[:profile_url])
+@@all << self
 end
 
 #Take in an array of hashes. Self = student
