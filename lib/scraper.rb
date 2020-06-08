@@ -50,6 +50,8 @@ doc = Nokogiri::HTML(html)
 student_profiles = {}
 
 #Code for grabbing each social link: calling the .css on the document
+#Looks like: <div class="vitals-container">
+#Looks like: <div class="social-icon-container">...</div>
 social_link = doc.css(".vitals-container .social-icon-container a")
 
 social_link.each do |element|
