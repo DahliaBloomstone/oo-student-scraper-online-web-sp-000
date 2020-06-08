@@ -16,7 +16,7 @@ students = []   #Return an array of Hashes, each hash represents a single studen
 page = Nokogiri::HTML(open(index_url))
 
 #Call .css on page and give it the argument of our css selector and iterate over each student, adding it to the student hash, which we will fill with scraped data:
-#page.css("div.student-card") code for grabbing each student card
+#page.css("div.student-card") code for grabbing each student card:
 page.css("div.student-card").each do |student|
 
 
