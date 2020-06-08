@@ -49,6 +49,7 @@ doc = Nokogiri::HTML(html)
 ##Returns a hash that describes individual students: Twitter URL, Linkedin URL, Github URL, blob URL, profile quote, bio
 student_profiles = {}
 
+#Code for grabbing each social link: calling the .css on the document
 social_link = doc.css(".vitals-container .social-icon-container a")
 
 social_link.each do |element|
