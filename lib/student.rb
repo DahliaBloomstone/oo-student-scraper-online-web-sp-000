@@ -1,5 +1,8 @@
 #Will use the information returned by the above scraper methods
-#SEND. Send is an instance method of the Object class. 
+#SEND. Send is an instance method of the Object class.
+#It is a part of METAPROGRAMMING.
+#Send calls the method name that is the key's name, with an argument of the value.
+#self.send(key=, value)
 
 class Student
 
@@ -7,8 +10,6 @@ attr_accessor :name, :location, :twitter, :linkedin, :github, :blog, :profile_qu
 
 @@all = []
 
-#Metaprogramming
-#Use the send method
 #Add newly created student to Student Class @@all array of students
 #push self into array
 def initialize(student_hash)
