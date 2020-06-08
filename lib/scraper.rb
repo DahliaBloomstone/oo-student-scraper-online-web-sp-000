@@ -11,9 +11,10 @@ class Scraper
   #Return an array of Hashes, each hash represents a single student
   #Use Element Inspector
 def self.scrape_index_page(index_url)
-page = Nokogiri::HTML(open(index_url))
+doc = Nokogiri::HTML(open(index_url))
 students = []
 page.css("div.student-card").each do |student|
+  students = []
 
 name = student.css(".student-name").text
 location = student.css(".student-location").text
