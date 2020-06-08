@@ -39,8 +39,7 @@ end
 #Ex: {:name => "Abby Smith", :location => "Brooklyn, NY", :profile_url => "students/abby-smith.html"},
 
 
-#responsible for scraping an individual student's profile page to further get info about that student:
-#Class method that should use Nokogiri and URI
+#Responsible for scraping an individual student's profile page to further get info about that student:
 def self.scrape_profile_page(profile_url)
 
 #Use Nokogiri and open URI to access profile page:
