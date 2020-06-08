@@ -3,12 +3,11 @@ require 'open-uri'
 require 'nokogiri'
 require 'pry'
 
+#Responsible for scraping the index page that lists all of the students:
+#URL: https://learn-co-curriculum.github.io/student-scraper-test-page/index.html
+#Use Nokogiri and URI
+#Use Element Inspector
 class Scraper
-
-  #responsible for scraping the index page that lists all of the students:
-  #URL: https://learn-co-curriculum.github.io/student-scraper-test-page/index.html
-  #Use Nokogiri and URI
-  #Use Element Inspector
 def self.scrape_index_page(index_url)
 students = []   #Return an array of Hashes, each hash represents a single student
 #Nokogiri::HTML method to take the string of HTML returned by open-URI's open method and convert into nested nodes:
