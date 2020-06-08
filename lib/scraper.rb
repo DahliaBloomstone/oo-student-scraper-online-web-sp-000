@@ -12,6 +12,7 @@ def self.scrape_index_page(index_url)
 students = []   #Return an array of Hashes, each hash represents a single student
 
 #Nokogiri::HTML method to take the string of HTML returned by open-URI's open method and convert into nested nodes:
+#Code for grabbing the page itself: 
 page = Nokogiri::HTML(open(index_url))
 
 #Call .css on page and give it the argument of our css selector and iterate over each student, adding it to the student hash, which we will fill with scraped data:
@@ -34,8 +35,8 @@ end
 #responsible for scraping an individual student's profile page to further get info about that student:
 #Class method that should use Nokogiri and URI
 #Returns a hash that describes individual students: Twitter URL, Linkedin URL, Github URL, blob URL, profile quote, bio
-
 def self.scrape_profile_page(profile_url)
+
     html = open(profile_url)
     doc = Nokogiri::HTML(html)
 
