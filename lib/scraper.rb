@@ -26,6 +26,7 @@ location = student.css(".student-location").text
 #Code for grabbing each profile URL:
 profile_url = student.css("a").attribute("href").value
 #Outlines the hash that we want. Student info = name, location, and url. Example below.
+#attr_accessors in the student.rb file 
 student_info = {:name => name,
                 :location => location,
                 :profile_url => profile_url}
@@ -70,7 +71,7 @@ social_link.each do |element|
     student_profiles[:profile_quote] = doc.css(".vitals-container .vitals-text-container .profile-quote").text
     student_profiles[:bio] = doc.css(".bio-block.details-block .bio-content.content-holder .description-holder p").text
 
-#return the student_profiles hash: 
+#return the student_profiles hash:
     student_profiles
   end
 end
