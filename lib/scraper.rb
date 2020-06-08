@@ -12,8 +12,7 @@ class Scraper
   #Use Element Inspector
 def self.scrape_index_page(index_url)
 doc = Nokogiri::HTML(open(index_url))
-students = []
-page.css("div.student-card").each do |student|
+doc.css("div.student-card").each do |student|
   students = []
 
 name = student.css(".student-name").text
