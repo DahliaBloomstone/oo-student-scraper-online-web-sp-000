@@ -19,9 +19,11 @@ page = Nokogiri::HTML(open(index_url))
 #page.css("div.student-card") code for grabbing each student card:
 page.css("div.student-card").each do |student|
 
-
+#Code for grabbing each student name:
 name = student.css(".student-name").text
+#Code for grabbing each student location:
 location = student.css(".student-location").text
+#Code for grabbing each profile URL: 
 profile_url = student.css("a").attribute("href").value
 student_info = {:name => name,
                 :location => location,
