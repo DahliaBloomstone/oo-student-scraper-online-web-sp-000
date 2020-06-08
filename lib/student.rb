@@ -3,6 +3,7 @@
 #It is a part of METAPROGRAMMING.
 #Send calls the method name that is the key's name, with an argument of the value.
 #self.send(key=, value)
+#Ex: sophie = User.new, sophie.send("#{method_name}=" value )
 
 class Student
 
