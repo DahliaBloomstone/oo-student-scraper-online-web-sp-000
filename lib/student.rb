@@ -28,7 +28,7 @@ students_array.each do |student_hash|
 Student.new(student_hash)
 end
 end
-#Student.add student will return value of  scraper.scrape profile page as the argument
+#Student.add student will return value of scraper.scrape profile page as the argument
 #Use meta programming
 #Use send method
 def add_student_attributes(attributes_hash)
