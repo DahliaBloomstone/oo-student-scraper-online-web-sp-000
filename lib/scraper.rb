@@ -23,8 +23,9 @@ page.css("div.student-card").each do |student|
 name = student.css(".student-name").text
 #Code for grabbing each student location:
 location = student.css(".student-location").text
-#Code for grabbing each profile URL: 
+#Code for grabbing each profile URL:
 profile_url = student.css("a").attribute("href").value
+#Code for grabbing each individual student's info: 
 student_info = {:name => name,
                 :location => location,
                 :profile_url => profile_url}
