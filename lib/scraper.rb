@@ -56,6 +56,7 @@ student_profiles = {}
 social_link = doc.css(".vitals-container .social-icon-container a")
 
 #Iterate over each element in the social link:
+#Attr_accessors in the student.rb file
 social_link.each do |element|
       if element.attr("href").include?("twitter")
         student_profiles[:twitter] = element.attr('href')
