@@ -44,7 +44,7 @@ end
 #Returns a hash that describes individual students: Twitter URL, Linkedin URL, Github URL, blob URL, profile quote, bio
 def self.scrape_profile_page(profile_url)
 
-#Use Nokogiri and open URI to access profile page: 
+#Use Nokogiri and open URI to access profile page:
 html = open(profile_url)
 doc = Nokogiri::HTML(html)
 
