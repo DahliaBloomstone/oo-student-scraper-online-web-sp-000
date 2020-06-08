@@ -12,10 +12,11 @@ def self.scrape_index_page(index_url)
 students = []   #Return an array of Hashes, each hash represents a single student
 
 #Nokogiri::HTML method to take the string of HTML returned by open-URI's open method and convert into nested nodes:
-#Code for grabbing the page itself: 
+#Code for grabbing the page itself:
 page = Nokogiri::HTML(open(index_url))
 
 #Call .css on page and give it the argument of our css selector and iterate over each student, adding it to the student hash, which we will fill with scraped data:
+#page.css("div.student-card") code for grabbing each student card
 page.css("div.student-card").each do |student|
 
 
