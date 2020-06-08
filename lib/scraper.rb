@@ -10,8 +10,11 @@ require 'pry'
 class Scraper
 def self.scrape_index_page(index_url)
 students = []   #Return an array of Hashes, each hash represents a single student
+
 #Nokogiri::HTML method to take the string of HTML returned by open-URI's open method and convert into nested nodes:
 page = Nokogiri::HTML(open(index_url))
+
+#Call .css on page and give it the argument of our css selector and iterate over each student:
 page.css("div.student-card").each do |student|
 
 name = student.css(".student-name").text
