@@ -69,7 +69,7 @@ social_link.each do |element|
       student_profiles[:blog] = element.attr("href")
       end
     end
-
+#Every student has a profile quote and bio, so does not need to be included in the iteration method.
     student_profiles[:profile_quote] = doc.css(".vitals-container .vitals-text-container .profile-quote").text
     student_profiles[:bio] = doc.css(".bio-block.details-block .bio-content.content-holder .description-holder p").text
 
