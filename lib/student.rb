@@ -20,7 +20,7 @@ self.send("profile_url=", student_hash[:profile_url])
 @@all << self
 end
 
-#Take in an array of hashes. Self = student
+#Take in an array of hashes. Self = Student
 #Student.create will return the value of Scraper.scrape index
 #Method should iterate over the array of hashes
 def self.create_from_collection(students_array)
